@@ -1,7 +1,15 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
 
 function Footer() {
-  return <h1>Footer goes here</h1>;
+  return (
+    <Card className="text-center">
+      <Card.Body>
+        <Card.Title>Footer title</Card.Title>
+        <Card.Text>Footer content</Card.Text>
+      </Card.Body>
+    </Card>
+  );
 }
 
 export default Footer;
