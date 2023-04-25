@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import About from "./components/About";
+
 import ProjectCard from "./components/ProjectCard";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
@@ -26,15 +26,31 @@ function App() {
     setCurrentSection("home");
   };
 
+  // render page based on currentSection
+  const renderPage = () => {
+    if (currentSection === "home") {
+      return <Hero />;
+    }
+    if (currentSection === "Portfolio") {
+      return <ProjectCard projectsData={projects} />;
+    }
+    if (currentSection === "Contact") {
+      return <Contact />;
+    }
+    if (currentSection === "Resume") {
+      return <Resume />;
+    }
+  };
+
   return (
     <Container fluid>
       <Row>
-        <Header changeSec={changeSection} current={currentSection} />
-        <Hero />
-        <About />
-        <ProjectCard projectsData={projects} />
-        <Contact />
-        <Resume />
+        <Header
+          changeSec={changeSection}
+          current={currentSection}
+          removeActive={handlRemoveActive}
+        />
+        {renderPage()}
         <Footer removeActive={handlRemoveActive} />
       </Row>
     </Container>
