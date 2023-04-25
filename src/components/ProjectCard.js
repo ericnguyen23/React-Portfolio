@@ -7,12 +7,13 @@ import Card from "react-bootstrap/Card";
 function ProjectCard(props) {
   return (
     <Container id="portfolio" className="p-5 khaki">
+      <h2>Portfolio</h2>
       <Row>
         {props.projectsData.map((proj, index) => {
           return (
             <Card
               style={{ width: "18rem" }}
-              className="m-4  proj-card"
+              className="m-2 proj-card p-3"
               key={index}
             >
               <Card.Img variant="top" src={proj.imageUrl} />

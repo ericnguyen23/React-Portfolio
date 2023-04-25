@@ -12,6 +12,11 @@ h2{
   border:2px solid #fcbf49;
 }
 
+/* bypass bootstraps default active styling */
+.active{
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
 .isActiveHome{
   border-bottom: 2px solid #fcbf49;
 }
@@ -26,11 +31,11 @@ background: linear-gradient(90deg, rgba(93,38,59,1) 0%, rgba(15,73,103,1) 46%, r
 }
 
 #avatar{
-  border:2px solid #d62828;
+  border:2px solid #8b1240;
 }
 
 .proj-card{
-  border:1px solid #d62828 !important;
+  border:1px solid #8b1240 !important;
 }
 
 #footer{
@@ -42,3 +47,12 @@ background: linear-gradient(90deg, rgba(93,38,59,1) 0%, rgba(15,73,103,1) 46%, r
   color: #eae2b7 !important;
 }
 
+.btn-primary{
+  background-color: rgba(93,38,59,1) !important;
+  border:none !important;
+}
+
+.btn-info{
+  background-color: rgb(3, 146, 218) !important;
+  border:none !important;
+}

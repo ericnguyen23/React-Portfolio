@@ -17,6 +17,22 @@ const projects = [
   },
   {
     imageUrl:
+      "https://github.com/ericnguyen23/Work-Day-Scheduler/raw/main/assets/images/screenshot.png",
+    title: "Work Day Scheduler",
+    desc: "This project utilizes JavaScript to allow users to input their specific hourly workday schedule. Data will perist utilizing local storage.",
+    githubUrl: "https://github.com/ericnguyen23/Work-Day-Scheduler",
+    deployedUrl: "https://ericnguyen23.github.io/Work-Day-Scheduler/",
+  },
+  {
+    imageUrl:
+      "https://github.com/ericnguyen23/Weather-Dashboard/raw/main/assets/images/screenshot.png",
+    title: "Weather Dashboard",
+    desc: "This project utilizes JavaScript and and the Open Weather API to create a weather dashboard. In addition, it uses Geolocation API to get the user's current location an return current location's weather. Bootstrap and DayJs are used for styling and date formatting.",
+    githubUrl: "https://github.com/ericnguyen23/Weather-Dashboard",
+    deployedUrl: "https://ericnguyen23.github.io/Weather-Dashboard/",
+  },
+  {
+    imageUrl:
       "https://ericnguyen23.github.io/Module-2-Challenge/assets/images/projects/proj---cheatsheet.png",
     title: "CSS Cheatsheet",
     desc: "Using HTML and CSS, a cheatsheet page was built with helpful css tips. Other technologies include css transitions and media queries.",
