@@ -11,13 +11,14 @@ function Contact(props) {
   const [email, SetEmail] = useState("");
   const [message, SetMessage] = useState("");
   const [warning, SetWarning] = useState(false);
+  const [emailWarning, SetEmailWarning] = useState(false);
+  const [messageWarning, SetMessageWarning] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     if (name === "fullName") {
       setFullName(value);
-      console.log(fullName);
     } else if (name === "email") {
       SetEmail(value);
     } else {
@@ -26,11 +27,28 @@ function Contact(props) {
   };
 
   const handleLeave = (e) => {
-    if (e.target.value === "") {
+    const { name, value } = e.target;
+    if (name === "fullName" && value === "") {
       SetWarning(true);
     } else {
       SetWarning(false);
     }
+
+    if (name === "email" && value === "") {
+      SetEmailWarning(true);
+    } else {
+      SetEmailWarning(false);
+    }
+
+    if (name === "message" && value === "") {
+      SetMessageWarning(true);
+    } else {
+      SetMessageWarning(false);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
   };
 
   return (
@@ -38,7 +56,7 @@ function Contact(props) {
       <Hero currentSection={props.currentSection} />
       <Row className="mt-5">
         <h2>Contact Me:</h2>
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <Form.Control
             value={fullName}
             name="fullName"
@@ -59,19 +77,39 @@ function Contact(props) {
             value={email}
             name="email"
             onChange={handleChange}
+            onBlur={handleLeave}
             type="email"
             placeholder="Email"
-            className="mb-3"
+            className={`mb-3 form-input ${
+              emailWarning ? "form-input-warning" : ""
+            }`}
           />
+          <Alert
+            variant="danger"
+            className={`${emailWarning ? "input-warning" : "input-alert"}`}
+          >
+            Please complete this field
+          </Alert>
 
           <Form.Control
             value={message}
             name="message"
             onChange={handleChange}
+            onBlur={handleLeave}
             type="textarea"
             placeholder="Message"
-            className="mb-3"
+            className={`mb-3 form-input ${
+              messageWarning ? "form-input-warning" : ""
+            }`}
+            style={{ height: "100px" }}
           />
+          <Alert
+            variant="danger"
+            className={`${messageWarning ? "input-warning" : "input-alert"}`}
+          >
+            Please complete this field
+          </Alert>
+
           <Button variant="primary" type="submit">
             Submit
           </Button>
