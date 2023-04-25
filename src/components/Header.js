@@ -1,19 +1,17 @@
 import React from "react";
 import NavList from "./NavList";
 import Container from "react-bootstrap/Container";
-// import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function Header() {
+function Header(props) {
   return (
-    <>
-      <Navbar variant="dark" className="p-4 dark-blue">
-        <Container fluid className="dark-blue">
-          <Navbar.Brand href="#home">Eric's Portfolio</Navbar.Brand>
-          <NavList />
-        </Container>
-      </Navbar>
-    </>
+    <Navbar variant="dark" className="p-4 dark-blue" id="top">
+      <Container fluid className="dark-blue">
+        <Navbar.Brand href="#home">Eric's Portfolio</Navbar.Brand>
+        {/* receiving props from parent "App.js" and passing it to NavList */}
+        <NavList navChangeSec={props.changeSec} navCurrentSec={props.current} />
+      </Container>
+    </Navbar>
   );
 }
 

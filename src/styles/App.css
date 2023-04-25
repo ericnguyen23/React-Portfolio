@@ -2,13 +2,10 @@ h2{
   color: #f77f00;
 }
 
-a{
-  color: #eae2b7 !important;
-}
 
-.active{
+.isActive{
   /* background-color: #d62828; */
-  border-bottom:2px solid  #d62828;
+  border:2px solid green;
 }
 
 .dark-blue{
@@ -31,3 +28,8 @@ a{
   color: #eae2b7;
   background-color: #003049;
 }
+
+#footer a{
+  color: #eae2b7 !important;
+}
+

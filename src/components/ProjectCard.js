@@ -8,9 +8,13 @@ function ProjectCard(props) {
   return (
     <Container id="portfolio" className="p-5 khaki">
       <Row>
-        {props.projectsData.map((proj) => {
+        {props.projectsData.map((proj, index) => {
           return (
-            <Card style={{ width: "18rem" }} className="m-4  proj-card">
+            <Card
+              style={{ width: "18rem" }}
+              className="m-4  proj-card"
+              key={index}
+            >
               <Card.Img variant="top" src={proj.imageUrl} />
               <Card.Body>
                 <Card.Title>{proj.title}</Card.Title>
