@@ -4,21 +4,22 @@ import Form from "react-bootstrap/Form";
 
 function Contact() {
   return (
-    <Container className="p-4">
+    <Container className="p-5" id="contact">
       <h2>Contact Me:</h2>
-      <Form.Group className="mb-3">
-        <Form.Label>Disabled input</Form.Label>
-        <Form.Control placeholder="Disabled input" disabled />
-      </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Label>Disabled select menu</Form.Label>
-        <Form.Select disabled>
-          <option>Disabled select</option>
-        </Form.Select>
-      </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Check type="checkbox" label="Can't check this" disabled />
-      </Form.Group>
+      <Form>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Name" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="name@example.com" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+      </Form>
     </Container>
   );
 }

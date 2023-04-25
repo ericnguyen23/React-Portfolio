@@ -1,14 +1,15 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
+// import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 
 function Footer() {
   return (
-    <Card className="text-center">
-      <Card.Body>
-        <Card.Title>Footer title</Card.Title>
-        <Card.Text>Footer content</Card.Text>
-      </Card.Body>
-    </Card>
+    <Container fluid className="p-5" id="footer">
+      <p>
+        Eric Nguyen | <a href="https://github.com/ericnguyen23">Github</a> |{" "}
+        <a href="https://www.linkedin.com/in/ericnguyen23/">LinkedIn</a>
+      </p>
+    </Container>
   );
 }
 

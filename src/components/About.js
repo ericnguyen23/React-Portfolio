@@ -7,10 +7,10 @@ import Avatar from "../images/avatar.jpeg";
 
 function About() {
   return (
-    <Container className="p-5">
+    <Container className="p-5" id="about">
       <Row>
         <Col md={2}>
-          <Image src={Avatar} roundedCircle fluid />
+          <Image src={Avatar} roundedCircle fluid id="avatar" />
         </Col>
         <Col md={10}>
           <h2>About Me</h2>

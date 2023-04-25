@@ -7,8 +7,8 @@ import Navbar from "react-bootstrap/Navbar";
 function Header() {
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="p-4">
-        <Container fluid>
+      <Navbar variant="dark" className="p-4 dark-blue">
+        <Container fluid className="dark-blue">
           <Navbar.Brand href="#home">Eric's Portfolio</Navbar.Brand>
           <NavList />
         </Container>
