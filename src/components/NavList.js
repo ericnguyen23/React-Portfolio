@@ -6,6 +6,12 @@ function NavList(props) {
     <Nav className="me-auto">
       <Nav.Link
         onClick={props.navChangeSec}
+        className={props.navCurrentSec === "About Me" ? "isActive" : ""}
+      >
+        About Me
+      </Nav.Link>
+      <Nav.Link
+        onClick={props.navChangeSec}
         className={props.navCurrentSec === "Portfolio" ? "isActive" : ""}
       >
         Portfolio

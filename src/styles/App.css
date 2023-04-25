@@ -1,5 +1,5 @@
 #hero{
-  height:40vh;
+  height:50vh;
   background: url("../images/create-g48d8a03b8_1920.jpg") center / cover, linear-gradient(#fcbf49,#003049);
   background-blend-mode: screen;
 }

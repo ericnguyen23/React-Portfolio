@@ -1,11 +1,27 @@
-import React from "react";
-import About from "./About";
+import React, { useState, useEffect } from "react";
 
-function Hero() {
+function Hero(props) {
+  const [currSection, SetCurrSection] = useState(props.currentSection);
+  const [isSubPage, SetIsSubPage] = useState(false);
+
+  useEffect(() => {
+    if (
+      currSection === "About Me" ||
+      currSection === "Portfolio" ||
+      currSection === "Contact" ||
+      currSection === "Resume"
+    ) {
+      SetIsSubPage(true);
+    }
+  }, [currSection]);
+
   return (
     <>
-      <div id="hero"></div>;
-      <About />
+      {isSubPage ? (
+        <div id="hero" style={{ height: "14vh" }}></div>
+      ) : (
+        <div id="hero"></div>
+      )}
     </>
   );
 }

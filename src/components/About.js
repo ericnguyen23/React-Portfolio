@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
+import Hero from "./Hero";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Avatar from "../images/avatar.jpeg";
 
-function About() {
+function About(props) {
   return (
     <Container className="p-5" id="about">
-      <Row>
+      <Hero currentSection={props.currentSection} />
+      <Row className="mt-5">
         <Col md={2}>
           <Image src={Avatar} rounded fluid id="avatar" />
         </Col>
