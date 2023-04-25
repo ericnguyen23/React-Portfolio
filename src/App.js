@@ -3,6 +3,7 @@ import "./styles/App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import ProjectCard from "./components/ProjectCard";
 import Contact from "./components/Contact";
@@ -29,6 +30,7 @@ function App() {
     <Container fluid>
       <Row>
         <Header changeSec={changeSection} current={currentSection} />
+        <Hero />
         <About />
         <ProjectCard projectsData={projects} />
         <Contact />

@@ -1,15 +1,24 @@
+#hero{
+  height:40vh;
+  background: url("../images/create-g48d8a03b8_1920.jpg") center / cover, linear-gradient(#fcbf49,#003049);
+  background-blend-mode: screen;
+}
+
 h2{
   color: #f77f00;
 }
 
-
 .isActive{
-  /* background-color: #d62828; */
-  border:2px solid green;
+  border:2px solid #fcbf49;
+}
+
+.isActiveHome{
+  border-bottom: 2px solid #fcbf49;
 }
 
 .dark-blue{
-  background-color: #003049;
+  background: rgb(93,38,59);
+background: linear-gradient(90deg, rgba(93,38,59,1) 0%, rgba(15,73,103,1) 46%, rgba(0,48,73,1) 100%);
 }
 
 .khaki{
@@ -17,7 +26,7 @@ h2{
 }
 
 #avatar{
-  border:4px solid #d62828;
+  border:2px solid #d62828;
 }
 
 .proj-card{
