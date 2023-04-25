@@ -1,10 +1,7 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
-import Hero from "./Hero";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Avatar from "../images/avatar.jpeg";
 
 function About(props) {
   return (

@@ -39,13 +39,13 @@ background: linear-gradient(90deg, rgba(93,38,59,1) 0%, rgba(15,73,103,1) 46%, r
 }
 
 #footer{
-  color: #eae2b7;
+  color: white;
   background: rgb(93,38,59);
 background: linear-gradient(90deg,  rgba(15,73,103,1) 46%, rgba(0,48,73,1) 100%);
 }
 
 #footer a{
-  color: #eae2b7 !important;
+  color: #f77f00 !important;
 }
 
 .btn-primary{
@@ -56,4 +56,16 @@ background: linear-gradient(90deg,  rgba(15,73,103,1) 46%, rgba(0,48,73,1) 100%)
 .btn-info{
   background-color: rgb(3, 146, 218) !important;
   border:none !important;
+}
+
+.form-input-warning{
+  border:1px solid #8b1240 !important;
+}
+
+.input-warning{
+  display: visible;
+}
+
+.input-alert{
+  display:none;
 }
