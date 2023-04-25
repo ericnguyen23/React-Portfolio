@@ -12,7 +12,18 @@ function Contact(props) {
   const [message, SetMessage] = useState("");
   const [warning, SetWarning] = useState(false);
   const [emailWarning, SetEmailWarning] = useState(false);
+  const [wrongEmailFormat, SetWrongEmailFormat] = useState(false);
   const [messageWarning, SetMessageWarning] = useState(false);
+
+  // check email format
+  // source: https://mailtrap.io/blog/validate-emails-in-react/
+  const checkEmail = () => {
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
+      SetWrongEmailFormat(false);
+    } else {
+      SetWrongEmailFormat(true);
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,6 +39,13 @@ function Contact(props) {
 
   const handleLeave = (e) => {
     const { name, value } = e.target;
+
+    // Check if email is incorrect format
+    if (name === "email") {
+      checkEmail();
+    }
+
+    // Check if fields are empty
     if (name === "fullName" && value === "") {
       SetWarning(true);
     } else {
@@ -90,6 +108,18 @@ function Contact(props) {
           >
             Please complete this field
           </Alert>
+          {wrongEmailFormat ? (
+            <Alert
+              variant="danger"
+              className={`${
+                wrongEmailFormat ? "input-warning" : "input-alert"
+              }`}
+            >
+              Please check your email address
+            </Alert>
+          ) : (
+            <div></div>
+          )}
 
           <Form.Control
             value={message}
