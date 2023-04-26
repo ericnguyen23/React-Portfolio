@@ -16,7 +16,7 @@ This is my personal Web Developer Portfolio Website created using Create React A
 
 ### Screenshot of the project
 
-![screenshot](./image/screenshot-new.png)
+![screenshot](./src/images/screenshot.png)
 
 ## Credits
 
