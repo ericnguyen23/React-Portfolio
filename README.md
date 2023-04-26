@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my personal Web Developer Portfolio Website created using Create React App. Included is a Portfolio page comprised of Bootcamp projects, an About, Resume and Contact page. 
+This is my personal Web Developer Portfolio Website created using Create React App. Included is a Portfolio page comprised of Bootcamp projects, an About, Resume and Contact page.
 
 ## Usage
 
@@ -22,4 +22,4 @@ Eric Nguyen
 
 [Github Profile](https://github.com/ericnguyen23)
 
-For any additional questions, please email me at ericnguyen23@gmail.com
+For any additional questions, please email me at ericnguyen23@gmail.co
