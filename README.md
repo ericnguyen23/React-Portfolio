@@ -10,6 +10,10 @@ This is my personal Web Developer Portfolio Website created using Create React A
 - Click on Github Repo and Deployed Application buttons to explore each project
 - Click the home icon within the footer to proceed to the Home Page
 
+## Deployed Application
+
+[Eric's Portfolio](https://ericnguyen23.github.io/React-Portfolio)
+
 ### Screenshot of the project
 
 ![screenshot](./image/screenshot-new.png)
