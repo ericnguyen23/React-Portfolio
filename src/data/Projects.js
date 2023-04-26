@@ -1,3 +1,5 @@
+import RegexImg from "../images/regex-tutorial.png";
+
 const projects = [
   {
     imageUrl:
@@ -30,6 +32,15 @@ const projects = [
     desc: "This project utilizes JavaScript and and the Open Weather API to create a weather dashboard. In addition, it uses Geolocation API to get the user's current location an return current location's weather. Bootstrap and DayJs are used for styling and date formatting.",
     githubUrl: "https://github.com/ericnguyen23/Weather-Dashboard",
     deployedUrl: "https://ericnguyen23.github.io/Weather-Dashboard/",
+  },
+  {
+    imageUrl: RegexImg,
+    title: "Regex Tutorial",
+    desc: "Created a Regex tutorial, using Github's Gist feature, breaking down the various parts of Regex checking for a Hex value match.",
+    githubUrl:
+      "https://gist.github.com/ericnguyen23/080c487ae43e92846971ce7d9f88fc54",
+    deployedUrl:
+      "https://gist.github.com/ericnguyen23/080c487ae43e92846971ce7d9f88fc54",
   },
   {
     imageUrl:

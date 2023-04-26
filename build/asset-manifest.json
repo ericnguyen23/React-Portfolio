@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb94480e.css",
+    "main.js": "/static/js/main.b392246a.js",
+    "static/media/regex-tutorial.png": "/static/media/regex-tutorial.2716e369002e6d603233.png",
+    "static/media/create-g48d8a03b8_1920.jpg": "/static/media/create-g48d8a03b8_1920.aff47a445ebf1bc2264b.jpg",
+    "static/media/avatar.jpeg": "/static/media/avatar.b1f52a5a7225a4792a72.jpeg",
+    "index.html": "/index.html",
+    "main.cb94480e.css.map": "/static/css/main.cb94480e.css.map",
+    "main.b392246a.js.map": "/static/js/main.b392246a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb94480e.css",
+    "static/js/main.b392246a.js"
+  ]
+}

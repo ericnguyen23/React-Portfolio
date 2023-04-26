@@ -2,6 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Hero from "./Hero";
+import ListGroup from "react-bootstrap/ListGroup";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function Resume(props) {
   return (
@@ -9,23 +11,26 @@ function Resume(props) {
       <Hero currentSection={props.currentSection} />
       <Row className="mt-5">
         <h2>Resume</h2>
-        <p>
-          Web Developer and designer with 6 years of graphic design, 2 years UX
-          design and 1 year of front-end web development experience. Proficient
-          in front-end and back-end technologies, including HTML, CSS,
-          JavaScript, Node with a strong understanding of web design principles
-          and best practices. Passionate about creating visually stunning and
-          functional websites that drive results for businesses. Strong
-          communication and collaboration skills, with a keen eye for detail and
-          a commitment to delivering high-quality work.
-        </p>
-        <h4>Experience</h4>
-        <p>
-          July 2016 - Present: Front End Developer, Multimedia Designer at
-          Pacific Life
-        </p>
-        <h4>Education</h4>
-        <p>January 2023: Full Stack Coding Bootcamp at UCI</p>
+        <a href="#resume" className="mb-3">
+          Download <FaCloudDownloadAlt />
+        </a>
+        <h3>Proficiencies</h3>
+        <ListGroup>
+          <ListGroup.Item>HTML</ListGroup.Item>
+          <ListGroup.Item>CSS</ListGroup.Item>
+          <ListGroup.Item>JavaScript</ListGroup.Item>
+          <ListGroup.Item>Nodeo</ListGroup.Item>
+          <ListGroup.Item>MySql</ListGroup.Item>
+          <ListGroup.Item>Sequelize</ListGroup.Item>
+          <ListGroup.Item>MongoDb</ListGroup.Item>
+          <ListGroup.Item>Mongoose</ListGroup.Item>
+          <ListGroup.Item>React</ListGroup.Item>
+          <ListGroup.Item>Express</ListGroup.Item>
+          <ListGroup.Item>Bootstrap</ListGroup.Item>
+          <ListGroup.Item>Command Line / Terminal</ListGroup.Item>
+          <ListGroup.Item>VsCode</ListGroup.Item>
+          <ListGroup.Item>Heroku</ListGroup.Item>
+        </ListGroup>
       </Row>
     </Container>
   );
