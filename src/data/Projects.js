@@ -3,6 +3,14 @@ import RegexImg from "../images/regex-tutorial.png";
 const projects = [
   {
     imageUrl:
+      "https://github.com/JakeDish/date-app/raw/main/images/Screenshot_2023-05-05_at_11.18.05_AM.png",
+    title: "MatchMaker",
+    desc: "This Dating App is a comprehensive online dating platform that allows users to find their perfect match.Our dating app is a modern, user-friendly platform designed to help singles find love and connect with like-minded individuals.The app suggest potential matches based on user prefernces and inetersts whether you're looking for a serious relationship or just some casual fun, our dating app is the perfect place to start your search.",
+    githubUrl: "https://github.com/JakeDish/date-app",
+    deployedUrl: "https://matchmakerdating.herokuapp.com/",
+  },
+  {
+    imageUrl:
       "https://ericnguyen23.github.io/Module-2-Challenge/assets/images/projects/proj---films.png",
     title: "Project Films",
     desc: "Working with a team of four, we were able to build a fully functional CRUD application using a number of technologies including Express, MySQL, Node, Bulma. This app allows users to create an account, create, edit and remove movies and also like movies.",
